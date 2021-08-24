@@ -5,7 +5,7 @@ import { ShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles.js";
 
 
- const Navbar = () => {
+const Navbar = ({totalItems }) => {
     const classes = useStyles();
     return (
         <>
@@ -18,7 +18,7 @@ import useStyles from "./styles.js";
                     <div className={classes.grow} />
                     <div className={classes.button}>
                         <IconButton area-label="Show Cart Items" color="inherit">
-                            <Badge badgeContent={2} color="secondary" >
+                            <Badge badgeContent={totalItems} color="secondary" >
                             <ShoppingCart />
                             </Badge>
                         </IconButton>
