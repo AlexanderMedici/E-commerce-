@@ -59,7 +59,6 @@ const App = () => {
                     </Route>
                     <Route exact path="/checkout">
                        <Checkout />
-                        
                     </Route>
                 </Switch>
             </div>
