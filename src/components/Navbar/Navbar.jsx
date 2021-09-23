@@ -10,7 +10,7 @@ const Navbar = ({totalItems }) => {
     const location = useLocation();
     
     return (
-        <>
+        <div>
             <AppBar position="fixed" className={classes.appBar} color="inherit">
                 <Toolbar>
                     <Typography  component={ Link} to="/"variant= "h6" className={classes.title} color="inherit">
@@ -29,7 +29,7 @@ const Navbar = ({totalItems }) => {
                 </Toolbar>
             </AppBar>
             
-        </>
+        </div>
     )
 }
 export default Navbar;
