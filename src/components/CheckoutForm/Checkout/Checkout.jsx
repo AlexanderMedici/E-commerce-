@@ -4,7 +4,7 @@ import useStyles from './styles';
 import AddressForm from "../AddressForm";
 import PaymentForm from '../PaymentForm';
 import { commerce } from '../../../lib/commerce';
-
+import { Link } from 'react-router-dom';
 const steps = ["Shipping address", "Payment details"];
 const Checkout = ({ cart, error, order, onCaptureCheckout  }) => {
     const [activeStep, setActiveStep] = useState(0);
@@ -33,9 +33,15 @@ const backStep = ( ) =>setActiveStep((previousActiveStep) => previousActiveStep 
     }
 
     const Confirmation = () => (
+        <>
         <div>
-            confirmation
+                <Typography variant="h5"> Thank you for your purchase, </Typography>
+                <Divider className={classes.divider} />
+                <Typography variant="subtitle2"> Order ref: ref</Typography>
+                <br />
+                <Button component={ Link} to='/'variant="outlined" type="button">Back To Home</Button>
         </div>
+        </>
     );
     const Form = ( ) => (activeStep === 0
         ? <AddressForm checkoutToken={checkoutToken} next={ next}/>
