@@ -6,7 +6,7 @@ import PaymentForm from '../PaymentForm';
 import { commerce } from '../../../lib/commerce';
 
 const steps = ["Shipping address", "Payment details"];
-const Checkout = ({ cart }) => {
+const Checkout = ({ cart, error, order, onCaptureCheckout  }) => {
     const [activeStep, setActiveStep] = useState(0);
     const [checkoutToken, setCheckoutToken] = useState([]);
     const [shippingData, setShippingData] = useState({});
@@ -39,7 +39,7 @@ const backStep = ( ) =>setActiveStep((previousActiveStep) => previousActiveStep 
     );
     const Form = ( ) => (activeStep === 0
         ? <AddressForm checkoutToken={checkoutToken} next={ next}/>
-        : <PaymentForm shippingData={shippingData} checkoutToken={ checkoutToken} />);
+        : <PaymentForm shippingData={shippingData} checkoutToken={checkoutToken} nextStep={nextStep } backStep={backStep} onCaptureCheckout={ onCaptureCheckout}/>);
     return (
         <>
             <div className={classes.toolbar} />
