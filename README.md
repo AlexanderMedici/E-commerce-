@@ -6,8 +6,8 @@ This minimalist site takes full advantage of React and SPA. A seamless experienc
 
 ## Screenshots
 
-![App Screenshot](https://imgur.com/a/GA7mGRH)
-
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+<p>enjoy this kitty its a placeholder Gif</p>
   
 ## Technologies Used
 
