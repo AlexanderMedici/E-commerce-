@@ -27,7 +27,7 @@ const PaymentForm =  ({ checkoutToken, backStep, shippingData, onCaptureCheckout
                     
                     
                 },
-                fullfillment: { shipping_method: shippingData.shippingOption },
+                fulfillment: { shipping_method: shippingData.shippingOption },
                 payment: {
                     gateway: 'stripe',
                     stripe: {

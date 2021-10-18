@@ -9,6 +9,7 @@ const Navbar = ({totalItems }) => {
     const classes = useStyles();
     const location = useLocation();
     
+    
     return (
         <div>
             <AppBar position="fixed" className={classes.appBar} color="inherit">
