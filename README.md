@@ -1,3 +1,35 @@
+# E-commerce
+This minimalist site takes full advantage of React and SPA. A seamless experience with a clean look very mobile friendly. Using clean code that is readable taking full taking advantage of E6 syntax and implementing it. This project is a fully functional   E-commerce app that has full stripe implementation. Material-UI is used for the overall look with styled components complimenting reacts framework beautifully and commercejs an API that serves as the back-end managing product inventory. 
+
+
+
+
+## Screenshots
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+<p>enjoy this kitty its a placeholder Gif</p>
+  
+## Technologies Used
+
+
+
+![NodeJS](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+   
+## Next Steps
+
+Refactor code for better Perfomance as well as improve code readability and consistency. Create a database. 
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
