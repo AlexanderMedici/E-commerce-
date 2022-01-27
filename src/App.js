@@ -36,14 +36,14 @@ const App = () => {
     setCart(item.cart);
   };
 
-  const handleUpdateCartQty = async (lineItemId, quantity) => {
-    const response = await commerce.cart.update(lineItemId, { quantity });
+  const handleUpdateCartQty = async (item, quantity) => {
+    const response = await commerce.cart.update(item, { quantity });
 
     setCart(response.cart);
   };
 
-  const handleRemoveFromCart = async (lineItemId) => {
-    const response = await commerce.cart.remove(lineItemId);
+  const handleRemoveFromCart = async (item) => {
+    const response = await commerce.cart.remove(item);
 
     setCart(response.cart);
   };
